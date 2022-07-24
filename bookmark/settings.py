@@ -135,3 +135,7 @@ LOGIN_REDIRECT_URL = 'dashboard'
 LOGIN_URL = 'login'
 # --to redirect the user to log out
 LOGOUT_URL = 'logout'
+
+# --Simple Mail Transfer Protocol(SMTP)
+# --The email_backend setting indicates the class to use to send emails.
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
