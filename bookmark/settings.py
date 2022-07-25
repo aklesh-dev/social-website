@@ -139,3 +139,9 @@ LOGOUT_URL = 'logout'
 # --Simple Mail Transfer Protocol(SMTP)
 # --The email_backend setting indicates the class to use to send emails.
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# --Enable django to serve media files
+# -- MEDIA_URL is the base url used to serve the media files uploaded by user
+# -- MEDIA_ROOT is the local path where they reside.
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
