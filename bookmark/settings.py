@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'social_django',
+    'django_extensions',
     
 ]
 
@@ -151,3 +153,6 @@ AUTHENTICATION_BACKEND = [
     'django.contrib.auth.backend.ModelBackend',
     'account.authentication.EmailAuthBackend'
 ]
+
+# --Allowed hosts
+ALLOWED_HOSTS = ['mysite.com', 'localhost', '127.0.0.1']

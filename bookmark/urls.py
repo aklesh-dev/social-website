@@ -22,6 +22,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # default url
     path('account/', include('account.urls')),
+    # --url for social auth
+    path('social-auth/', include('social_django.urls', namespace='social')),
 ]
 
 # --Django development server will be in charge of serving the media files during development
