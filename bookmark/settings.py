@@ -145,3 +145,9 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # -- MEDIA_ROOT is the local path where they reside.
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+# --Custom authentication backend--
+AUTHENTICATION_BACKEND = [
+    'django.contrib.auth.backend.ModelBackend',
+    'account.authentication.EmailAuthBackend'
+]
