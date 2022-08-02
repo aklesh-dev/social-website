@@ -151,8 +151,17 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 # --Custom authentication backend--
 AUTHENTICATION_BACKEND = [
     'django.contrib.auth.backend.ModelBackend',
-    'account.authentication.EmailAuthBackend'
+    'account.authentication.EmailAuthBackend',
+    'social_core.backends.facebook.FacebookOAuth2',
+    'social_core.backends.twitter.TwitterOAuth',
 ]
+
+# -- Facebook App ID
+SOCIAL_AUTH_FACEBOOK_KEY = '3213266609002680' 
+# -- Facebook App secret
+SOCIAL_AUTH_FACEBOOK_SECRET = '03c5fb244085ef50337580a9a1329aba'
+# --Optional , extra permissions to ask facebook users
+SOCIAL_AUTH_FACEBOOK_SCOPE = 'EMAIL'
 
 # --Allowed hosts
 ALLOWED_HOSTS = ['mysite.com', 'localhost', '127.0.0.1']
