@@ -156,12 +156,17 @@ AUTHENTICATION_BACKEND = [
     'social_core.backends.twitter.TwitterOAuth',
 ]
 
+# ---Facebook auth ---|
 # -- Facebook App ID
 SOCIAL_AUTH_FACEBOOK_KEY = '3213266609002680' 
 # -- Facebook App secret
 SOCIAL_AUTH_FACEBOOK_SECRET = '03c5fb244085ef50337580a9a1329aba'
 # --Optional , extra permissions to ask facebook users
 SOCIAL_AUTH_FACEBOOK_SCOPE = 'EMAIL'
+
+# --- Twitter auth ---|
+SOCIAL_AUTH_TWITTER_KEY = 'sGKV5cxH4WZG8yBzyweXclkI3'
+SOCIAL_AUTH_TWITTER_SECRET = 'Ybgg6qdD3K7LDR68f9PR28dajQ69wIhjTtz3nsGaQRRaA04pre'
 
 # --Allowed hosts
 ALLOWED_HOSTS = ['mysite.com', 'localhost', '127.0.0.1']
