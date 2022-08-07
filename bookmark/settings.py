@@ -154,6 +154,7 @@ AUTHENTICATION_BACKEND = [
     'account.authentication.EmailAuthBackend',
     'social_core.backends.facebook.FacebookOAuth2',
     'social_core.backends.twitter.TwitterOAuth',
+    'social_core.backends.google.GoogleOAuth2',
 ]
 
 # ---Facebook auth ---|
@@ -165,8 +166,16 @@ SOCIAL_AUTH_FACEBOOK_SECRET = '03c5fb244085ef50337580a9a1329aba'
 SOCIAL_AUTH_FACEBOOK_SCOPE = 'EMAIL'
 
 # --- Twitter auth ---|
+# --Twitter api key
 SOCIAL_AUTH_TWITTER_KEY = 'sGKV5cxH4WZG8yBzyweXclkI3'
+# --Twitter api secret
 SOCIAL_AUTH_TWITTER_SECRET = 'Ybgg6qdD3K7LDR68f9PR28dajQ69wIhjTtz3nsGaQRRaA04pre'
+
+# ---Google auth ---|
+# --Google consumer key
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '351936009227-e5mkhs4rdcd6q1bnb4lgh9bohlff0lps.apps.googleusercontent.com'
+# --Google consumer secret
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'
 
 # --Allowed hosts
 ALLOWED_HOSTS = ['mysite.com', 'localhost', '127.0.0.1']
