@@ -20,10 +20,13 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # default url
+    # default url, account application
     path('account/', include('account.urls')),
     # --url for social auth
     path('social-auth/', include('social_django.urls', namespace='social')),
+
+    # -- url for images application
+    path('images/', include('images.urls', namespace='images')),
 ]
 
 # --Django development server will be in charge of serving the media files during development
